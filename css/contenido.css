@@ -1,0 +1,161 @@
+.contenido_introduccion{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-around;
+}
+
+.selfie{
+    width: 30%;
+    border-radius: 100%;
+    margin: 5px;
+}
+.intro_titulo{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.redes{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.contenido_sobremi{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--colorblue);
+    
+}
+.sobremi_titulo{
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 10px 0 10px 0;
+}
+
+.contenido_skills{
+    display: flex;
+    flex-direction: column; 
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+.skills_cards{
+    width: 40%;
+    border: solid;
+    border-radius: 20px;
+    height: 80px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.fa-brands{
+    color:var(--logos);
+    width: 200px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    flex-wrap: wrap;
+}
+.titulo_skills{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.contenido_hobbies{
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    background-color: var(--colorblue);
+    align-items: center;
+}
+.hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+.contenido_formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorblue);
+}
+
+.imagen_escuelas{
+    width: 100px;
+    height: 80px;
+}
+.card_formacion{
+    background-color: #ffff;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.formacion_nombre{
+    align-self: flex-start;
+    font-weight: bold;
+    margin-left: 20%;
+}
+.formacion_anio{
+    margin-left: 20%;
+    align-self: flex-start;
+}
+
+
+.contenido_experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experiencias{
+    display: flex;
+}
+.card_experiencia{
+    height: 200px;
+    margin-top: 20px;
+}
+.imagen_proyecto{
+    width: 300px;
+}
+.descripcion{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.titulo_proyecto{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.boton_proyectos{
+    border: solid var(--logos);
+    color: var(--logos);
+    width: 8rem;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenido_formulario{
+    background-color: var(--colorblue);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

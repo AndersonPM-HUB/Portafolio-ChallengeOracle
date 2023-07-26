@@ -1,0 +1,9 @@
+:root{
+    --raleway: 'Raleway', sans-serif;
+    --colorblue:#EAF2FD;
+    --logos :#2A7AE4;
+}
+
+body{
+    font-family: var(--raleway);
+}

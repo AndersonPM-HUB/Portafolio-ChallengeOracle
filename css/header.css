@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.header_nombre{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header_correo{
+    font-size: .7rem;
+}
