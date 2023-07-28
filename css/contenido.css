@@ -21,6 +21,9 @@
     justify-content: space-between;
     margin-top:10px;
 }
+.redes_sociales:hover{
+    color: var(--logos);
+}
 .contenido_sobremi{
     display: flex;
     flex-direction: column;
@@ -28,12 +31,17 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--colorblue);
+    padding-bottom: 20px;
     
 }
 .sobremi_titulo{
     font-size: 22px;
     font-weight: bolder;
     margin: 10px 0 10px 0;
+}
+.sobremi_texto{
+    text-align: justify;
+    margin-top: 1rem;
 }
 
 .contenido_skills{
@@ -42,9 +50,11 @@
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
+    max-height: 800px;
+   
 }
 .skills_cards{
-    width: 40%;
+    width: 150px;
     border: solid;
     border-radius: 20px;
     height: 80px;
@@ -55,21 +65,24 @@
     padding: 10px;
 }
 
-.fa-brands{
+.fa-brands, .fa-solid{
     color:var(--logos);
-    width: 200px;
+    font-size: 30px;
 }
+
 .cards{
     display: flex;
     justify-content: space-between;
     height: 200px;
     flex-wrap: wrap;
 }
+
 .titulo_skills{
     font-weight: bold;
     font-size: 22px;
     margin: 10px;
 }
+
 
 .contenido_hobbies{
     display: flex;
@@ -77,39 +90,50 @@
     flex-direction: column;
     background-color: var(--colorblue);
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 .hobbies{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
     justify-content: space-between;
+    
 }
+
 
 .contenido_formacion{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--colorblue);
+    padding-bottom: 10px;
 }
+
 
 .imagen_escuelas{
     width: 100px;
     height: 80px;
+    align-self: center;
 }
 .card_formacion{
     background-color: #ffff;
     width: 60%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 1s ease;
 }
+
 .formacion_nombre{
-    align-self: flex-start;
+    align-self: start;
     font-weight: bold;
-    margin-left: 20%;
+  
 }
 .formacion_anio{
-    margin-left: 20%;
     align-self: flex-start;
 }
 
@@ -119,15 +143,21 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+
 .experiencias{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card_experiencia{
     height: 200px;
-    margin-top: 20px;
+    margin: 50px;
 }
+
 .imagen_proyecto{
-    width: 300px;
+    max-width: 100%;
 }
 .descripcion{
     display: flex;
@@ -148,6 +178,10 @@
     align-items: center;
     justify-content: center;
 }
+.boton_proyectos:hover{
+    background-color: var(--logos);
+    color:#ffff;
+}
 .contenido_formulario{
     background-color: var(--colorblue);
     padding-left: 20px;
@@ -158,4 +192,139 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.input-form{
+    padding: 20px;
+    margin:10px;
+    border: none;
+}
+
+.boton-form{
+    background-color: var(--logos);
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    color: #ffff;
+    border:none;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-contacto{
+    display: none;
+}
+
+.skills_cards:hover{
+    box-shadow: -5px 26px 66px -23px #74e4e4;
+
+}
+
+.card_formacion:hover{
+    transform: scale(1.2);
+   
+}
+
+/*tablet version el tamaño de las pantallas del tablets, el 768 hasta el 1024 pixeles*/
+@media screen and (min-width:768px) {
+
+    .contenido_introduccion{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    
+    .contenido_formacion{
+        flex-direction: row;
+    }
+
+    .skills_cards{
+        width: 200px;
+    }
+    .contenido_hobbies{
+        margin-top: 100px;
+    }
+
+    .card_experiencia{
+        height: 200px;
+        margin-bottom: 200px;
+    }
+    .imagen_proyecto{
+        max-width: 100%;
+    }
+}
+
+
+/*Desktop */
+
+@media screen and (min-width: 1024px){
+
+    .intro_titulo{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 20px;
+    }
+    .contenido_introduccion, .contenido_sobremi,.contenido_experiencia,.contenido_formacion,.contenido_hobbies{
+        padding-left: 60px;
+    }
+    .sobremi_texto{
+        width: 60%;
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .contenido_introduccion{
+        align-items: center;
+    }
+    .selfie{
+        width: 20%;
+    }
+    .skills_cards{
+        width: 150px;
+        border:none;
+        box-shadow: 24px 32px 53px -3px rgba(0,0,0,0.1);
+        align-items: stretch;
+        height: 200px;
+        margin: 10px;
+    }
+    .contenido_hobbies{
+        margin-top: 250px;
+        background-color: #ffff;
+        padding-bottom: 30px;
+    }
+    .contenido_formacion{
+        padding: 60px;
+    }
+    .card_experiencia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card_experiencia-img{
+        max-width: 60%;
+    }
+    .descripcion{
+        width: 30%;
+    }
+    .imagen-contacto{
+        display: flex;
+        width: 70%;
+    }
+    .img-cont{
+        width: 100%;
+    }
+    .contenido_formulario{
+        display: flex;
+        padding: 100px;
+    }
+    .header_nombre{
+        font-size: 1rem;
+    }
 }
