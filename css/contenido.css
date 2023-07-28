@@ -230,6 +230,18 @@ footer{
    
 }
 
+@media screen and (min-width:300px) {
+    .skills_cards{
+        width: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    .skills_cards p{
+        font-size: 8px;
+    }
+    
+}
 /*tablet version el tamaño de las pantallas del tablets, el 768 hasta el 1024 pixeles*/
 @media screen and (min-width:768px) {
 
